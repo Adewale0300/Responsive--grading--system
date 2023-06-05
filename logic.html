@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body class="col-7 mx-auto">
+    <div class="form-group my-3">
+        <input type="number" class="form-control" placeholder="Enter your score" id="scoreOfUser">
+    </div>
+    <div class="form-group my-3">
+        <button class="btn bg-info btn-danger w-100" onclick="checkScore()">check Score
+        </button>
+    </div>
+    <script>
+        function checkScore() {
+
+          if (scoreOfUser.value >= 0 && scoreOfUser.value <= 39) {
+                alert ("Faild")
+            }
+            else if (scoreOfUser.value >= 40 && scoreOfUser.value <= 44) {
+                alert ("Pass")
+        }
+        else if (scoreOfUser.value >= 45 && scoreOfUser.value <= 49) {
+                alert ("Average")
+        }
+        else if (scoreOfUser.value >= 50 && scoreOfUser.value <= 59) {
+                alert ("credit")
+        }
+        else if (scoreOfUser.value >= 60 && scoreOfUser.value <= 69) {
+                alert ("Good")
+        }
+        else if (scoreOfUser.value >= 70 && scoreOfUser.value <= 100) {
+                alert ("Excellent")
+        }
+        else if (scoreOfUser.value <0 || scoreOfUser.value >100 ) {
+            alert("Invalid")
+        }
+        
+
+    }
+
+    </script>
+</body>
+</html>
